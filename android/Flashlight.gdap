@@ -1,0 +1,11 @@
+[config]
+
+name="Flashlight"
+binary_type="local"
+binary="flashlight-release.aar"
+
+[dependencies]
+
+local=[]
+remote=[]
+custom_maven_repos=[]

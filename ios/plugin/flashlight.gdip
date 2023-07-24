@@ -1,0 +1,17 @@
+[config]
+name="Flashlight"
+binary="flashlight.a"
+
+initialization="register_flashlight_types"
+deinitialization="unregister_flashlight_types"
+
+[dependencies]
+linked=[]
+embedded=[]
+system=[]
+
+capabilities=[]
+
+files=[]
+
+[plist]
