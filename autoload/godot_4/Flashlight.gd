@@ -13,7 +13,7 @@ func init():
 
 
 func init_signals():
-	flashlight.connect("error", Callable(self, "_on_error"))
+	flashlight.connect("flashlight_error", Callable(self, "_on_error"))
 
 
 func _on_error(error_message):

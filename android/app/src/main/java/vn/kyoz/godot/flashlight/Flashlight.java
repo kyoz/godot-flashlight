@@ -43,7 +43,7 @@ public class Flashlight extends GodotPlugin {
     public Set<SignalInfo> getPluginSignals() {
         Set<SignalInfo> signals = new ArraySet<>();
 
-        signals.add(new SignalInfo("error", String. class));
+        signals.add(new SignalInfo("flashlight_error", String. class));
 
         return signals;
     }
@@ -59,7 +59,7 @@ public class Flashlight extends GodotPlugin {
                 cameraManager.setTorchMode(cameraId, state);
             } catch (Exception e) {
                 Log.e(TAG, e.getMessage());
-                emitSignal("error", e.getMessage());
+                emitSignal("flashlight_error", e.getMessage());
             }
         } else {
             try {
@@ -83,7 +83,7 @@ public class Flashlight extends GodotPlugin {
                 }
             } catch (Exception e) {
                 Log.e(TAG, e.getMessage());
-                emitSignal("error", e.getMessage());
+                emitSignal("flashlight_error", e.getMessage());
             }
         }
     }

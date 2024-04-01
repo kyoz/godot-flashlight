@@ -36,7 +36,7 @@ Flashlight *Flashlight::get_singleton() {
 
 
 void Flashlight::_bind_methods() {
-    ADD_SIGNAL(MethodInfo("error", PropertyInfo(Variant::STRING, "error_code")));
+    ADD_SIGNAL(MethodInfo("flashlight_error", PropertyInfo(Variant::STRING, "error_code")));
     
     ClassDB::bind_method("toggle", &Flashlight::toggle);
 }
